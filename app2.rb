@@ -7,11 +7,11 @@ require_relative 'lib/player'
 #require_relative 'lib/game'
 
  
-puts "------------------------------------------------
-|Bienvenue sur 'ILS VEULENT TOUS MA POO' !           |
-|Le but du jeu est d'être le dernier survivant !     |
-|               Fight!                               |
------------------------------------------------------"
+puts " ---------------------------------------------------------
+|     Bienvenue sur 'ILS VEULENT TOUS MA POO' !           |
+|     Le but du jeu est d'être le dernier survivant !     |
+|                    Fight!                               |
+ ---------------------------------------------------------"
  
 puts ""
 puts "Bonjour, veuillez entrer votre nom de joueur"
@@ -21,8 +21,8 @@ print " > "
 user = HumanPlayer.new (gets.chomp)  
 player2 = Player.new("Josiane")
 player3 = Player.new("José")
-enemies = [player2, player3] 
-
+enemies = [player2, player3]
+ 
 #le programme tourne tant que les points de vie du joueur ou celle des deux ennemies sont positifs
 while user.life_points >0 && (player2.life_points > 0 || player3.life_points >0) 
   
