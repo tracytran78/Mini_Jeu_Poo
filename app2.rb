@@ -19,11 +19,9 @@ print " > "
 
 #l'utilisateur doit créer son player en le nommant
 user = HumanPlayer.new (gets.chomp)  
-enemies = [] 
 player2 = Player.new("Josiane")
 player3 = Player.new("José")
-enemies << player 2
-enemies << player 3
+enemies = [player2, player3] 
 
 #le programme tourne tant que les points de vie du joueur ou celle des deux ennemies sont positifs
 while user.life_points >0 && (player2.life_points > 0 || player3.life_points >0) 
